@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GiaiPtBac2</title>
+</head>
+<body>
+    <script>
+        let a = +prompt("Nhập giá trị của a");
+        let b = +prompt("Nhập giá trị của b");
+        let c = +prompt("Nhập giá trị của c");
+        console.log("Ta co phuong trinh :" +a+("*X^2") +("+")+ b+("*X") +("+")+ c+("= 0"))
+
+        if(a==0){
+            if(b==0){
+                if(c==0){
+                    console.log("Phuong trinh co vo so nghiem");
+                } else {
+                    console.log("Phuong trinh vo nghiem");
+                }
+            } else {
+                console.log("Phuong trinh co nghiem :x= " +(-c/b));
+            }
+            
+        } else {
+            let delta = b*b-(4*a*c);
+            console.log(" Delta = :" +delta)
+                if (delta <0) {
+                    console.log("Phuong trinh vo nghiem");
+                } else if (delta == 0) {
+                    console.log("Phuong trinh co nghiem kep: x1 =x2 =" + (-b/(2*a)));
+                } else {
+                    var x1 = (-b + Math.sqrt(delta))/(2*a);
+                    var x2 = (-b - Math.sqrt(delta))/(2*a);
+                    console.log("Phuong trinh co hai nghiem rieng biet :" + x1 +" va"+ x2);
+                }
+        }
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nhập vào năm in ra thế kỉ</title>
+</head>
+<body>
+    <script>
+        var nam = +prompt("Nhập năm cần tính :")
+        console.log("Nam can tinh :" + nam)
+        if(nam%100==0){
+            theky=nam/100
+            if(nam>0){
+                console.log("Nam " + nam+ " thuoc the ky :" + theky)
+            } else if( nam < 0){
+            console.log("Nam " + nam+ " thuoc the ky :" + theky + ("Truoc Cong Nguyen"))
+            } else {
+                console.log("Cong nguyen")
+            }
+        } else {
+            var theky = parseInt(nam/100)+1
+            if ( nam>0){
+            console.log("Nam " + nam +" thuoc the ky: " + theky)
+            }
+            if (nam<0){
+            var theky = Math.abs(parseInt(nam/100)) + 1
+            console.log("Nam " + nam + " thuoc the ky : " + theky + " truoc cong nguyen")
+            }
+        }
+
+    </script>
+</body>
+</html>

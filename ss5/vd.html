@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hinhTamGiac</title>
+</head>
+<body>
+    <script>
+        let N = +prompt("nhap vao chieu cao tam giac");
+        N = parseInt(N);
+        let M = parseInt(prompt("nhap vao tam giac M"))
+        for(let i =N; i>0; i--){
+            for(let j = 0; j<i;j++){
+                document.write("*");
+                console.log("*")
+            }
+            document.write("<br/>")
+            console.log("<br/>")
+        }
+
+
+        for(let k=0; k<M; k++){
+            for(let q= 0; q<k; q++){
+                document.write("+");
+                console.log("+")
+            }
+            document.write("<br/>")
+            console.log("<br/>");
+        }
+    </script>
+</body>
+</html>

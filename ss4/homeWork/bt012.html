@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KiemTraSoHoanHao</title>
+</head>
+<body>
+  <script>
+      let a = parseInt(prompt("Nhap vao mot so nguyen duong"))
+      console.log("So ban nhap vao :" +a)
+      let sum = 0;
+      if(a<=0){
+        console.log("xin moi nhap lai 1 so nguyen duong")
+      } else{ console.log("cac uoc cua " +a +" la :")
+          for(i=1;i<a;i=i+1){
+              if(a%i==0){
+                  sum=sum+i
+                  console.log(i)
+              }
+          }console.log("Tong cac uoc cua " +a  +" la :" +sum)
+          if(a==sum){
+              console.log(a +" la so hoan hao")
+          }else{
+              console.log(a + " khong la so hoan hao")
+          }
+      }
+  </script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InSoNgayTrongThang</title>
+</head>
+<body>
+    <script>
+        let year = +prompt("Nhập vào năm bạn chọn :") // nhập năm
+        let month = +prompt("Nhập vào tháng bạn chọn :") // nhập tháng
+        if((year>=0)&&(year%1==0)&&(month<=12)&&(month>=1)&&(month%1==0)) {
+            switch (month){
+                case 1:
+                case 3:
+                case 5:
+                case 7:
+                case 8:
+                case 10:
+                case 12: {
+                    console.log("Nam " +year + " Thang "+ month +" co 31 ngay" )
+                    break
+                }
+                case 4:
+                case 6:
+                case 9:
+                case 11: {
+                    console.log("Nam " +year +" Thang " + month +" co 30 ngay")
+                    break
+                }
+                case 2:
+                    if (year % 4 == 0) {
+                        console.log("Nam " +year+ " Thang " +month+ " co 29 ngay");
+                    } else {
+                        console.log("Nam " + year + " Thang " + month + " co 28 ngay")
+                    }
+            }
+
+        } else {
+            console.log("Du lieu sai")
+        }
+    </script>
+</body>
+</html>

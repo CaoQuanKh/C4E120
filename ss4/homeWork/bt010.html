@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tính giai thừa của một số nhập vào từ bàn phím</title>
+</head>
+<body>
+    <script>
+        let i = parseInt(+prompt("Nhập một số tự nhiên >= 0"));
+        console.log("số bạn đã nhập :" +i);
+        if( i < 0){
+            console.log("xin nhap so nguyen duong")
+        }else if (i == 0){
+            console.log("Giai thua cua 0 la 1")
+            } else if(i>0){
+                let product =1;
+                    for(i=i; i >=1; i = i-1){
+                    product = product*i;
+                    }
+                     console.log("Giai thua can tinh :"+ product);
+                }
+
+        
+        
+    </script>
+</body>
+</html>
